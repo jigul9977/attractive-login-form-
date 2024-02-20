@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پروژه فرم - شماره 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <p class="project-title">پروژه فرم - شماره 4</p>
+    <div class="container">
+      <div class="form-container signup-container">
+        <form action="">
+          <h1>عضویت از طریق شبکه های اجتماعی</h1>
+          <div class="social-container">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <span>یا</span>
+          <input type="text" placeholder="نام ..." />
+          <input type="email" placeholder="ایمیل ..." />
+          <input type="password" placeholder="کلمه عبور ..." />
+          <button class="reg-btn">عضویت</button>
+        </form>
+      </div>
+      <div class="form-container signin-container">
+        <form action="">
+          <h1>ورود از طریق شبکه های اجتماعی</h1>
+          <div class="social-container">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <span>یا</span>
+          <input type="email" placeholder="ایمیل ..." />
+          <input type="password" placeholder="کلمه عبور ..." />
+          <button class="login-btn">ورود</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>خوش آمدید</h1>
+            <p>برای دسترسی به تمام امکانات سایت ابتدا در سایت لاگین نمایید</p>
+            <button class="ghost" id="signIn">ورود</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>خوش آمدید</h1>
+            <p>اگر عضو سایت نیستید در کمتر از 1 دقیقه عضو سایت شوید</p>
+            <button class="ghost" id="signUp">عضویت</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#signUp").click(function () {
+          $(".container").addClass("right-panel-active");
+        });
+        $("#signIn").click(function () {
+          $(".container").removeClass("right-panel-active");
+        });
+      });
+    </script>
+  </body>
+</html>
